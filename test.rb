@@ -33,18 +33,18 @@ class Player
     puts "you have #{lives}/3 lives"
     lives
   end
-  puts player1.lives
 end
 
 class Question
   player1 = Player.new
+  puts player1.lives
   player2 = Player.new
 
   num1 = rand(1..20)
   num2 = rand(1..20)
   puts "What is #{num1} plus #{num2} equals what?"
   answer = gets.chomp
-  #create method called correct
+  #creat method called correct
   if(num1 + num2 == answer.to_i)
     puts "You got it!"
   elsif
