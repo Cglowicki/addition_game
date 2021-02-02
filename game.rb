@@ -35,6 +35,7 @@ class Game
     if @current_player.dead?
       end_game
     else
+      puts "You have #{@current_player.lives}/3 lives"
       switch_turn
     end
   end

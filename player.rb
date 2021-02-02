@@ -10,7 +10,7 @@ class Player
 
   def lose_life
     @lives = @lives - 1
-    puts "you have #{@lives}/3 lives"
+    puts "You have #{@lives}/3 lives"
   end
 
   def dead?
