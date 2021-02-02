@@ -17,3 +17,7 @@
 #--questions => num1 & num2, ask method, 
   #constructor - num1 + num2 == true (question.result)
 #--game => logic, prompts, UI - input from .chomps
+
+require './game.rb'
+  game = Game.new
+    game.start
