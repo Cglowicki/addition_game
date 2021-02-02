@@ -19,5 +19,15 @@
 #--game => logic, prompts, UI - input from .chomps
 
 require './game.rb'
-  game = Game.new
-    game.start
+require './player.rb'
+
+p1 = Player.new("Player 1")
+p2 = Player.new("Player 2")
+game = Game.new(p1, p2)
+game.start
+
+while gets.chomp == 'y'
+  game.start
+end
+
+exit
