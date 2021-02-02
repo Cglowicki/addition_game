@@ -1,9 +1,3 @@
-#--game => logic, prompts, UI - input from .chomps
-#---SPECIAL: loop through game so as not to declare it every turn
-#--- set up turn logic
-
-#--access to player and question classes
-
 require './question.rb'
 
 class Game
@@ -50,7 +44,6 @@ class Game
     puts "#{@current_player.name} is dead..."
     puts "================================="
     puts "Play again? (y/n)"
-
   end
 
 end

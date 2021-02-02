@@ -1,5 +1,5 @@
 class Player
-
+  
   attr_accessor :lives, :name
   
   def initialize(name)
@@ -16,4 +16,5 @@ class Player
   def dead?
     @lives <= 0
   end
+
 end
