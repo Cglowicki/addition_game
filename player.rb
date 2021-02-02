@@ -5,7 +5,6 @@ class Player
   def initialize(name)
     @name = name
     @lives = 3
-    puts "you have #{@lives}/3 lives"
   end
 
   def lose_life
